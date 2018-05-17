@@ -1,0 +1,24 @@
+header {
+  width:100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 64px;
+}
+
+.headerlogo {
+  height: 32px;
+}
+
+.headernav {
+  height: 32px;
+}
+
+.headernav ul {
+}
+
+.headernav li {
+  padding-left: 16px;
+  display: inline;
+}

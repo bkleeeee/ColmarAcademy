@@ -1,3 +1,4 @@
+/*== header styles==*/
 header {
   width:100%;
   display: inline-flex;
@@ -9,10 +10,17 @@ header {
 
 .headerlogo {
   height: 32px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .headernav {
   height: 32px;
+}
+
+.headerlogo img,
+.headerlogo p {
+  display: inline;
 }
 
 .headernav ul {
@@ -21,4 +29,34 @@ header {
 .headernav li {
   padding-left: 16px;
   display: inline;
+}
+
+/*==main article styles ==*/
+
+.container {
+  display: inline-flex;
+  align-content: center;
+  width: 100%;
+  padding: 32px 24px;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding-left: 24px;
+  height: 100%;
+}
+
+
+/*-- learn article styles --*/
+.learn {
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: auto;
 }

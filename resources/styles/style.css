@@ -38,6 +38,7 @@ header {
   align-content: center;
   width: 100%;
   padding: 32px 24px;
+  height: auto;
 }
 
 .main-right {
@@ -47,16 +48,11 @@ header {
   justify-content: center;
   width: 40%;
   padding-left: 24px;
-  height: 100%;
 }
 
 
 /*-- learn article styles --*/
 .learn {
-  background-image: url('../images/banner.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 60%;
   height: auto;
 }

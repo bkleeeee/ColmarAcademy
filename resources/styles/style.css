@@ -28,6 +28,11 @@ article {
   margin: 0px;
 }
 
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
 /*--stand in colors and styles --*/
 .banner,
 .start-learning {
@@ -37,7 +42,6 @@ article {
 body {
   color: RGBA(66, 25, 11, .8);
 }
-
 
 /*== header styles==*/
 header {
@@ -206,7 +210,16 @@ header {
     width: 90%;
   }
   .banner {
-    background-color: #d9d9d9;
+    background-color:  RGB(255, 204, 129);
+  }
+  .banner h1{
+    font-size: 3rem;
+  }
+  .banner h3 {
+    font-size: 2rem;
+  }
+  .btn p {
+    font-size: 1.6rem;
   }
 }
 /*-- readmore article styles --*/
@@ -362,6 +375,11 @@ header {
 @media only screen and (max-width: 640px) {
   .start-learning {
     background-color: white;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 32px;
+  }
+  .start-learning h2 {
+    padding-bottom: 16px;
   }
   .tile-container {
     flex-wrap: nowrap;
@@ -380,7 +398,7 @@ header {
   .learning-tiles h3 {
     padding: 24px 16px;
     margin: 0;
-    background-color: #d9d9d9;
+    background-color:  RGB(255, 204, 129);
   }
 }
 

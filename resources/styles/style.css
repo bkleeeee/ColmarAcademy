@@ -5,7 +5,6 @@ body {
 
 h1,
 h2,
-h3,
 h4 {
   font-family: Poppins, sans-serif;
 }
@@ -22,6 +21,7 @@ h3 {
 
 a {
   text-decoration: none;
+  color: RGB(164, 131, 22)
 }
 
 article {
@@ -31,21 +31,25 @@ article {
 /*--stand in colors and styles --*/
 .banner,
 .start-learning {
-  background-color: #d9d9d9;
+  background-color: RGB(255, 204, 129);
 }
 
 body {
-  color: #404040;
+  color: RGBA(66, 25, 11, .8);
 }
 
 
 /*== header styles==*/
 header {
+  position: fixed;
   width:100%;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
   height: 64px;
+  background-color: white;
+  z-index: 2;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .headerlogo {
@@ -53,6 +57,15 @@ header {
   display: inline-flex;
   align-items: center;
   margin-left: 24px;
+  color: #333333;
+}
+
+.headerlogo p{
+  font-weight: 500;
+}
+
+.headerlogo span {
+  font-weight: 800;
 }
 
 .headernav {
@@ -145,6 +158,10 @@ header {
 
 
 /*-- banner article styles --*/
+.banner {
+    padding-top: 64px;
+    width: 100%;
+}
 
 .banner-text {
   display: flex;
@@ -170,7 +187,7 @@ header {
 }
 
 .btn {
-  background-color: grey;
+  background-color: RGB(207, 142, 47);
   width: 100%;
   display: block;
   text-align: center;
@@ -219,7 +236,11 @@ header {
 }
 
 .read-nav:nth-child(3n) {
-  background-color: #d9d9d9;
+  background-color: RGB(255, 170, 129);
+}
+
+.read-nav:nth-child(3n) a {
+  color: RGB(255, 235, 172);
 }
 
 .read-icon {
@@ -288,6 +309,9 @@ header {
   .read-nav:nth-child(3n) {
     background-color: white;
   }
+  .read-nav:nth-child(3n) a {
+    color: RGB(164, 131, 22);
+  }
 }
 /*-- start learning styles --*/
 .start-learning {
@@ -329,7 +353,7 @@ header {
   margin: 8px 16px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   .learning-tiles {
     width: 35%;
   }
@@ -406,7 +430,7 @@ header {
 }
 
 .thesis-nav:first-child {
-  background-color: #d9d9d9;
+  background-color: RGB(255, 225, 129);
 }
 
 .thesis-icon {

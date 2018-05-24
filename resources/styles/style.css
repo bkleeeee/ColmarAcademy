@@ -192,16 +192,27 @@ header {
 
 .btn {
   background-color: RGB(207, 142, 47);
+  transition: background-color .2s linear .1s;
   width: 100%;
   display: block;
   text-align: center;
   color: white;
 }
 
+
 .btn p {
-  margin: 8px auto;
+  padding: 8px;
   font-weight: 500;
   color: white;
+}
+
+.btn:hover {
+  background-color: RGB(162, 183, 47);
+  color: brown;
+}
+
+.btn p:hover {
+  color: RGB(247, 247, 247);
 }
 
 @media only screen and (max-width: 640px) {
@@ -246,6 +257,11 @@ header {
   display: inline-flex;
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
+  transition: border-left .1s ease-in .2s;
+}
+
+.read-nav:hover {
+  border-left: 3px outset #d9d9d9;
 }
 
 .read-nav:nth-child(3n) {
@@ -324,6 +340,9 @@ header {
   }
   .read-nav:nth-child(3n) a {
     color: RGB(164, 131, 22);
+  }
+  .read-nav:hover {
+    border-left: none;
   }
 }
 /*-- start learning styles --*/
